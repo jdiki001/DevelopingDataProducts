@@ -1,0 +1,23 @@
+---
+title: "Week 2 Assignment"
+author: "Donovan Dikitanan"
+date: "6/9/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## June 9, 2020
+
+```{r}
+library("leaflet")
+dogBeach <- data.frame(lat = 33.67, lng = -118.02)
+dogBeach %>% 
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers()
+dogBeach
+```
